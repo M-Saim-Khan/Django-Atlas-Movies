@@ -20,3 +20,16 @@ The app uses MongoDB's `sample_mflix` database and displays movie and viewer dat
 - django-mongodb-backend 6.0.3
 - PyMongo
 - MongoDB Atlas
+
+
+**Setup:** 
+- Clone the repo with `git clone <your-repository-url>`
+- enter the folder with `cd <project-folder>`
+- create a virtual environment using `python -m venv env`
+- activate it with `.\env\Scripts\Activate.ps1` on Windows or `source env/bin/activate` on macOS/Linux
+- install dependencies with `pip install -r requirements.txt` or `pip install Django django-mongodb-backend pymongo dnspython`
+- add your MongoDB Atlas connection string in `quickstart/quickstart/settings.py`
+- move into the Django folder with `cd quickstart`
+- run migrations using `python manage.py migrate`
+- start the server with `python manage.py runserver`
+- then open **http://127.0.0.1:8000/** in your browser
